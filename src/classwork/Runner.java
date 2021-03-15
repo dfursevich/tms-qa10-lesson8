@@ -2,11 +2,11 @@ package classwork;
 
 public class Runner {
     public static void main(String[] args) {
-        Printable book1 = new Book("Harry Potter", "J.R.", "Text of the book");
+        Printable book1 = new Book("Harry Potter", "J.R.", "Text of the book", Genre.FICTION);
         book1.print();
         System.out.println("Author: " + ((Book) book1).getAuthor());
 
-        Book book2 = new Book("The lord of the ring", "Tolkien", "Text of the book2");
+        Book book2 = new Book("The lord of the ring", "Tolkien", "Text of the book2", Genre.DOCUMENTARY);
         System.out.println(book2.contains("the"));
 
         Printable magazine = new Magazine("Maxim");

@@ -4,11 +4,13 @@ public class Book implements BookPrintable, Searchable {
     private String name;
     private String author;
     private String content;
+    private Genre genre;
 
-    public Book(String name, String author, String content) {
+    public Book(String name, String author, String content, Genre genre) {
         this.name = name;
         this.author = author;
         this.content = content;
+        this.genre = genre;
     }
 
     public String getName() {
